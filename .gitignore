@@ -1,0 +1,16 @@
+# Node/Vercel backend
+node_modules/
+.vercel/           # Vercel’s build output cache (generated on deploy)
+.env               # main environment vars
+.env.*             # any env variant (.env.local, .env.production, etc.)
+
+# Logs & debug files
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
