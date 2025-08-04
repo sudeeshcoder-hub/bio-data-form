@@ -141,7 +141,7 @@
 
 <div class="container">
   <h1>Welcome to Our Company</h1>
-  <form id="biodataForm" method="POST" action="/api/submit">
+  <form id="biodataForm" method="POST">
     <label>Full Name:</label>
     <input type="text" name="name" required><br><br>
 
@@ -182,7 +182,7 @@ document.getElementById("biodataForm").addEventListener("submit", async function
 
   const formData = Object.fromEntries(new FormData(this).entries());
 
-  let res = await fetch("/api/submit", {
+  let res = await fetch("https://bio-data-form.vercel.app/api/submit", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData)
