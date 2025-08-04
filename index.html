@@ -182,7 +182,7 @@ document.getElementById("biodataForm").addEventListener("submit", async function
 
   const formData = Object.fromEntries(new FormData(this).entries());
 
-  let res = await fetch("https://bio-data-form.vercel.app/api/submit", {
+  let res = await fetch("/api/submit", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData)
